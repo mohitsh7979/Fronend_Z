@@ -30,3 +30,18 @@ box-sizeing
   1 border box 
   2 content box (default)
     
+
+
+when you create new repo at the time you will use commands :
+
+git init 
+git add .
+git commit -m "message"
+git remote add https..... 
+git push -u origin master 
+
+
+when you push your code in your existing repo 
+git add .
+git commit -m "message"
+git push 
