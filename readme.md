@@ -13,4 +13,20 @@ HTML (Hyper text markeup language)
     
     Formateing tag 
     b,u,i,ins,del,sub,sup,center
+
+css 
+types of css 
+ 1 inline css 
+ 2 internal css 
+ 3 external css 
+
+selectors 
+ 1 class selector 
+ 2 id selector 
+ 3 psudo selectors
+
+margin,padding 
+box-sizeing 
+  1 border box 
+  2 content box (default)
     
