@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+    async function FetchApi(){
+        
+        const FetchData = await fetch('product.json');
+        const data = await FetchData.json();
+
+        console.log(data)
+        
+    }
+
+    FetchApi()
+    
+
+    </script>
+    
+</body>
+</html>
