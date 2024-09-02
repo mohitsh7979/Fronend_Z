@@ -105,9 +105,11 @@
             visibility: visible;
         }
 
+       
         .bar{
             display: none;
         }
+
 
         i{
             font-size: 30px;
@@ -115,13 +117,49 @@
         
         }
 
-        @media (max-width:770px){
+        section{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .left1,.right1{
+
+            width: 30%;
+            height: 70vh;
+            border: 2px solid black;
+        }
+
+        @media (max-width:850px){
+
+            .bar{
+                display: block;
+            }
 
             .mid,.right{
                 display: none;
             }
-            .bar{
-                display: block;
+
+            h1{
+                font-size: 1rem;
+                font-weight: 100;
+
+            }
+            
+        }
+
+        @media (max-width:700px){
+
+            .left1{
+                display: none;
+            }
+
+            .right1{
+
+                width: 80%;
+                background-color: red;
             }
             
         }
@@ -195,6 +233,12 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </header>
+
+
+    <section>
+      <div class="left1"></div>
+      <div class="right1"></div>
+    </section>
     
 </body>
 </html>

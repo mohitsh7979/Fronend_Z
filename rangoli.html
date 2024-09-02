@@ -28,12 +28,12 @@
         justify-content: center;
         align-items: center;
         border-radius: 300px;
-        background-color: yellow;
+        background-color: black;
         animation-name: box;
         animation-duration: 100ms;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        box-shadow: 0px 0px 50px yellow;
+        box-shadow: inset 0px 0px 100px green;
       }
 
       .upper-container{
@@ -46,6 +46,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: red;
+        box-shadow: inset 0px 0px 70px black;
       }
 
       .box {
@@ -56,6 +58,8 @@
         position: absolute;
         box-shadow: 0px 0px 20px red;
         border: 1px solid black;
+        box-shadow: inset 0px 0px 70px yellow;
+        
       }
 
       .box:nth-child(1) {
@@ -75,14 +79,83 @@
         transform: rotate(-45deg);
       }
 
-      @keyframes box {
+      .color-box{
+
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        border-radius: 200px;
+        position: absolute;
+        box-shadow: inset 0px 0px 30px green;
+      }
+
+      #color1{
+
+        left: 30%;
+        border-radius: 0px 100px 0px 100px;
+        transform: rotate(-45deg);
+      }
+
+      #color2{
+        right: 30%;
+        border-radius: 0px 100px 0px 100px;
+        transform: rotate(-45deg);
+      }
+
+      #color3{
+        top: 30%;
+        border-radius: 0px 100px 0px 100px;
+        transform: rotate(45deg);
+      }
+
+      #color4{
+        bottom: 30%;
+        border-radius: 0px 100px 0px 100px;
+        transform: rotate(45deg);
+      }
+
+      .item{
+
+        background-color: yellow;
+        height: 50px;
+        width: 50px;
+        border-radius: 500px 0px 500px 0px;
+        position: absolute;
+      }
+
+      #item1{
+
+         left: 20%;
+         top: 20%;
+         transform: rotate(90deg);
+      }
+
+      #item2{
+        right: 20%;
+        bottom: 20%;
+        transform: rotate(90deg);
+      }
+
+      #item3{
+        left: 20%;
+        bottom: 20%;
+      }
+
+      #item4{
+        right: 20%;
+        top: 20%;
+      }
+
+   
+
+      /* @keyframes box {
         from {
           transform: rotate(0deg);
         }
         to {
           transform: rotate(360deg);
         }
-      }
+      } */
     </style>
   </head>
   <body>
@@ -92,6 +165,14 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
+        <div class="color-box" id="color1"></div>
+        <div class="color-box" id="color2"></div>
+        <div class="color-box" id="color3"></div>
+        <div class="color-box" id="color4"></div>
+        <div class="item" id="item1"></div>
+        <div class="item" id="item2"></div>
+        <div class="item" id="item3"></div>
+        <div class="item" id="item4"></div>
       </div>
     </div>
   </body>
